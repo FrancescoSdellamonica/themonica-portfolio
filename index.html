@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>theMonica — Photography Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio fotografico di Francesco Saverio Della Monica: ritratti, street, urban.">
+  <meta name="color-scheme" content="dark">
+  <style>
+    :root{
+      --bg:#0e0f12; --panel:#14161b; --ink:#eaeaf0; --muted:#a7aab3;
+      --stroke:#23252c; --accent:#9fd5ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{border-bottom:1px solid var(--stroke);padding:28px 0 10px}
+    .brand{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .logo{font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+    nav a{color:var(--muted);margin-left:14px}
+    nav a:hover{color:var(--ink)}
+    .hero{display:grid;gap:22px;grid-template-columns:1.1fr 2fr;align-items:center;margin:24px 0}
+    .card{background:var(--panel);border:1px solid var(--stroke);border-radius:16px;padding:20px}
+    h1{font-size:clamp(28px,4.8vw,44px);margin:0 0 8px;line-height:1.1}
+    .sub{color:var(--muted);margin:0 0 14px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{border:1px solid var(--stroke);color:var(--muted);padding:4px 10px;border-radius:999px;font-size:12px}
+    .cta{display:inline-block;margin-top:12px;background:var(--ink);color:#0b0c0f;
+      padding:10px 14px;border-radius:12px;font-weight:700}
+    section{padding:26px 0}
+    h2{font-size:clamp(20px,3.2vw,28px);margin:0 0 12px}
+    .grid{columns:1;column-gap:12px}
+    @media(min-width:720px){.grid{columns:2}}
+    @media(min-width:1100px){.grid{columns:3}}
+    figure.tile{break-inside:avoid;background:var(--panel);border:1px solid var(--stroke);
+      border-radius:14px;margin:0 0 12px;overflow:hidden}
+    figure.tile figcaption{padding:10px 12px;color:var(--muted);font-size:14px;border-top:1px solid var(--stroke)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-block;border:1px solid var(--stroke);padding:6px 10px;border-radius:10px;color:var(--ink);background:#181a20}
+    .buy{background:var(--accent);color:#08121a;font-weight:800;border:0;padding:7px 12px;border-radius:10px}
+    .wm{position:relative}
+    .wm::after{content:"© theMonica";position:absolute;right:8px;bottom:8px;color:rgba(255,255,255,.66);
+      font-size:12px;letter-spacing:.06em;background:rgba(0,0,0,.35);padding:3px 6px;border-radius:6px}
+    footer{border-top:1px solid var(--stroke);color:var(--muted);text-align:center;padding:28px 0 40px}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <div class="logo">theMonica • photography</div>
+      <nav aria-label="Sezioni">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="card">
+        <h1>Storie di luce, gesti, città.</h1>
+        <p class="sub">Ritratti, street e visioni urbane curate da Francesco Saverio Della Monica.</p>
+        <div class="chips">
+          <span class="chip">Ritratti</span><span class="chip">Street</span><span class="chip">Urban</span>
+        </div>
+        <a class="cta" href="#portfolio">Guarda la gallery</a>
+      </div>
+      <figure class="tile wm" style="margin:0">
+        <img src="assets/images/hero.svg" alt="Scatto di copertina" width="1600" height="1000" loading="eager">
+      </figure>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>Uso la luce per raccontare persone e luoghi. Lavoro tra ritratti, street e visioni urbane con uno stile pulito e narrativo. Disponibile per shooting, eventi e progetti editoriali.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <figure class="tile wm"><img src="assets/images/p1.svg"><figcaption>Ritratto 01</figcaption></figure>
+        <figure class="tile wm"><img src="assets/images/p2.svg"><figcaption>Ritratto 02</figcaption></figure>
+        <figure class="tile wm"><img src="assets/images/p3.svg"><figcaption>Street 01</figcaption></figure>
+        <figure class="tile wm"><img src="assets/images/p4.svg"><figcaption>Street 02</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contatti</h2>
+      <p><strong>Email</strong> <a href="mailto:hello@themonica.nft">hello@themonica.nft</a> · 
+         <strong>Instagram</strong> <a target="_blank" href="https://instagram.com/tuoprofilo">@tuoprofilo</a></p>
+    </section>
+  </main>
+
+  <footer>© 2025 theMonica.nft — All rights reserved.</footer>
+</body>
+</html>
